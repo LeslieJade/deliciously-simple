@@ -2,8 +2,8 @@ body, html {
   color: #152022;
   font-family: 'Source Serif Pro', serif;
   font-weight: 700;
-  letter-spacing: 2px;
   height: 100%;
+  letter-spacing: 2px;
   margin: 0;
 }
 
@@ -48,7 +48,18 @@ h3 {
 
 .recipe-description {
   border-bottom: 3px solid #152022;
-  padding: 0px 75px 75px 75px;
+  padding: 0 75px 75px 75px;
+}
+
+.recipe-description ul {
+  display: inline-block;
+}
+
+.recipe-description ul li {
+  float: left;
+  font-size: 24px;
+  list-style-type: none;
+  padding: 0 125px;
 }
 
 .equipment, .ingredients, .baking-instructions {
@@ -64,25 +75,39 @@ h3 {
   padding: 50px;
 }
 
-ul, ol {
-font-size: 24px;
-line-height: 32px;
-list-style-type: square;
-  }
-
 .equipment ul {
+  font-size: 24px;
+  line-height: 32px;
+  list-style-type: square;
   margin: 0 auto;
   width: 450px;
 }
 
 .ingredients ul {
+  font-size: 24px;
+  line-height: 32px;
+  list-style-type: square;
   margin: 0 auto;
   width: 750px;
 }
 
 .baking-instructions ol {
+  font-size: 24px;
+  line-height: 32px;
+  list-style-type: square;
   margin: 0 auto;
   width: 1250px;
+}
+
+footer {
+  background-color: #f0f8ff;
+  border-top: 3px solid #152022;
+  padding: 25px;
+}
+
+h4, h5 {
+  color: #152022;
+  text-align: center;
 }
 
 .blueberries-image {
