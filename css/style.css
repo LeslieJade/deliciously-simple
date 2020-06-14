@@ -1,109 +1,133 @@
-body, html {
+html {
+  font-size: 16px;
+  width: 100%;
+}
+
+body {
+  align-items: center;
   color: #152022;
+  display: flex;
+  flex-flow: row wrap;
   font-family: 'Source Serif Pro', serif;
   font-weight: 700;
   height: 100%;
+  justify-content: center;
   letter-spacing: 2px;
   margin: 0;
+  width: 100%;
 }
 
-.blueberries-image, .ingredients-image, .muffins-bottom-image, .muffins-top-image {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100%;
-  position: relative;
+.container {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
 }
 
 header {
-    background-color: #f0f8ff;
-    border-bottom: 3px solid #152022;
-    padding: 25px;
+  align-items: center;
+  background-color: #f0f8ff;
+  border-bottom: 3px solid #152022;
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  width: 100%;
 }
 
 .title {
   font-family: 'Allura', cursive;
-  font-size: 48px;
+  font-size: 2em;
   letter-spacing: 2px;
   text-align: center;
 }
 
 h2 {
-  font-size: 48px;
-  letter-spacing: 2px;
+  font-size: 2em;
   margin-bottom: 0;
   text-align: center;
   text-transform: capitalize;
+  width: 100%;
 }
 
 p {
-  font-size: 24px;
+  font-size: 1.25em;
+  width: 90%;
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 1.5em;
   text-align: center;
   text-transform: uppercase;
+  width: 100%;
 }
 
 .recipe-description {
+  align-items: center;
   border-bottom: 3px solid #152022;
-  padding: 0px 75px 75px 75px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
 }
 
 .recipe-description ul {
-  display: inline-block;
+  border-bottom: 1px solid #152022;
+  border-top: 1px solid #152022;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  width: 80%;
 }
 
 .recipe-description ul li {
-  float: left;
-  font-size: 24px;
+  display: flex;
+  font-size: 1.25em;
   list-style-type: none;
-  padding: 0 125px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.border {
+  border-left: 1px solid #152022;
+  border-right: 1px solid #152022;
 }
 
 .equipment, .ingredients, .baking-instructions {
+  align-items: center;
   border-bottom: 3px solid #152022;
   border-top: 3px solid #152022;
-  box-sizing: border-box;
-  padding: 100px 150px 100px 150px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 75px 0;
+  width: 100%;
 }
 
 .box-background {
   background-color: #f0f8ff;
-  box-sizing: border-box;
   padding: 50px;
+  width: 90%;
 }
 
-.equipment ul {
-  font-size: 24px;
+.equipment ul, .ingredients ul, .baking-instructions ol {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 1.25em;
+  height: 90%;
   line-height: 32px;
   list-style-type: square;
   margin: 0 auto;
-  width: 450px;
-}
-
-.ingredients ul {
-  font-size: 24px;
-  line-height: 32px;
-  list-style-type: square;
-  margin: 0 auto;
-  width: 750px;
-}
-
-.baking-instructions ol {
-  font-size: 24px;
-  line-height: 32px;
-  list-style-type: square;
-  margin: 0 auto;
-  width: 1250px;
+  width: 90%;
 }
 
 footer {
+  align-items: center;
   background-color: #f0f8ff;
   border-top: 3px solid #152022;
+  display: flex;
+  justify-content: center;
   padding: 25px;
+  width: 100%;
 }
 
 h4, h5 {
@@ -111,24 +135,52 @@ h4, h5 {
   text-align: center;
 }
 
+/***IMAGES***/
 .blueberries-image {
-  background-image: url('../img/blueberries.jpg')
+  background: url('../img/blueberries.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  min-height: 800px;
+  width: 100%;
 }
 
 .ingredients-image {
-  background-image: url('../img/ingredients.jpg')
+  background: url('../img/ingredients.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  min-height: 800px;
+  width: 100%;
 }
 
 .muffins-bottom-image {
-  background-image: url('../img/muffins-bottom.jpg')
+  background: url('../img/muffins-bottom.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  min-height: 800px;
+  width: 100%;
 }
 
 .muffins-top-image {
-  background-image: url('../img/muffins-top.jpg')
+  background: url('../img/muffins-top.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  min-height: 800px;
+  width: 100%;
 }
 
-@media only screen and (max-device-width: 1024px) {
+/***TABLET & DESKTOP LAYOUTS***/
+@media all and (min-width: 768px) {
   .blueberries-image, .ingredients-image, .muffins-bottom-image, .muffins-top-image {
-    background-attachment: scroll;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+
+    body {
+      font-size: 18px;
     }
 }
