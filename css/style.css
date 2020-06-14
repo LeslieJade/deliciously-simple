@@ -87,11 +87,6 @@ h3 {
   text-align: center;
 }
 
-.border {
-  border-left: 1px solid #152022;
-  border-right: 1px solid #152022;
-}
-
 .equipment, .ingredients, .baking-instructions {
   align-items: center;
   border-bottom: 3px solid #152022;
