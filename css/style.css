@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-flow: row wrap;
   font-family: 'Source Serif Pro', serif;
+  font-size: 1em;
   font-weight: 700;
   height: 100%;
   justify-content: center;
@@ -51,7 +52,6 @@ h2 {
 }
 
 p {
-  font-size: 1.25em;
   width: 90%;
 }
 
@@ -81,7 +81,6 @@ h3 {
 
 .recipe-description ul li {
   display: flex;
-  font-size: 1.25em;
   list-style-type: none;
   padding: 0 10px;
   text-align: center;
@@ -107,7 +106,6 @@ h3 {
 .equipment ul, .ingredients ul, .baking-instructions ol {
   display: flex;
   flex-flow: column wrap;
-  font-size: 1.25em;
   height: 90%;
   line-height: 32px;
   list-style-type: square;
@@ -176,6 +174,6 @@ h4, h5 {
     }
 
     body {
-      font-size: 18px;
+      font-size: 20px;
     }
 }
